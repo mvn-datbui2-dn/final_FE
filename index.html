@@ -6,35 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/26bfa5fbae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="page-header">
         <div class="container">
             <ul class="header-list">
-                <li class="header-item"><a href=""><img src="/images/nvidia-geforce-466-77-cung-cap-hang-loat-toi-uu-khi-choi-game.jpeg" alt="" width="150px" height="100px"></a></li>
-                <li class="header-item">
-                    <form action="">
-                        <input type="text" placeholder="enter name...">
-                        <button type="button" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
+                <li class="header-item"><a href="/index.html"><img src="/images/Nvidia_logo.svg.png" alt="no image" ></a></li>
+                <li class="header-item header-left">  
+                    <a href="/createProduct.html" class="header-create">Create new product</a>
+                    <input type="text" id="searchBar" name="searchBar" placeholder="Search product name..">   
                 </li>
             </ul>
         </div>
     </header>
     <main class="page-main">
-        <a href="/createProduct.html">Create new product</a>
-        <table class="product-list" >
-            <thead>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Image</th>
-                <th>manufacturer</th>
-                <th>Price</th>
-            </thead>
-            <tbody id="show-product">
-                
-            </tbody>
-        </table>
+        <div class="container">
+            <h1>PRODUCT LIST</h1>
+            <table class="product-list" >
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Manufacturer</th>
+                    <th>Price</th>
+                    <th colspan="2"></th>
+                </thead>
+                <tbody id="show-product">
+                    
+                </tbody>
+            </table>
+        </div>
     </main>
     <script src="/products.js"></script>
 </body>
