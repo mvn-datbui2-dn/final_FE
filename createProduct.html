@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/26bfa5fbae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <ul class="header-list">
+                <li class="header-item"><a href="/index.html"><img src="/images/Nvidia_logo.svg.png" alt="no image" ></a></li>             
+            </ul>
+        </div>
+    </header>
+    <main class="page-main form-main">
+        <div class="container">
+            <h2>Create Product</h2>
+            <form action="" class="create-products" enctype="multipart/form-data">
+                <label for="" class="title"  >Name</label> <br>
+                <input type="text" id="name" placeholder="Enter product name.." required> <br>
+                <label for="" class="title" >Image</label> <br>
+                <input type="file" id="image"  required> <br>
+                <label for="" class="title" >Manufacturer</label> <br>
+                <input type="text" id="manufacturer" placeholder="Enter product manufacturer.."> <br>
+                <label for="" class="title">Price</label> <br>
+                <input type="number" id="price" placeholder="Enter Price of product.."> <br>
+                <a href="/index.html" onclick="createData()">Create</a>    
+            </form>
+        </div>
+    </main>
+    <script src="create.js"></script>
+</body>
+</html>

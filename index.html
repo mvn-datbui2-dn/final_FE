@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/26bfa5fbae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <ul class="header-list">
+                <li class="header-item"><a href="/index.html"><img src="/images/Nvidia_logo.svg.png" alt="no image" ></a></li>
+                <li class="header-item header-left">  
+                    <a href="/createProduct.html" class="header-create">Create new product</a>
+                    <input type="text" id="searchBar" name="searchBar" placeholder="Search product name..">   
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="page-main">
+        <div class="container">
+            <h1>PRODUCT LIST</h1>
+            <table class="product-list" >
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Manufacturer</th>
+                    <th>Price</th>
+                    <th colspan="2"></th>
+                </thead>
+                <tbody id="show-product">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="/products.js"></script>
+</body>
+</html>
